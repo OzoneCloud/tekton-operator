@@ -16,7 +16,7 @@ spec:
   steps:
     - image: docker.io/library/golang:1.23.0-alpine
       name: fetch-components
-      workingDir: /go/src/github.com/OzoneCloud/tekon-operator
+      workingDir: /go/src/github.com/OzoneCloud/tekton-operator
       script: |
         #!/usr/bin/env bash
         for platform in $(params.TARGET_PLATFORMS); do
